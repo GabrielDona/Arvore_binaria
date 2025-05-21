@@ -18,4 +18,15 @@ public class ArvoreBinaria {
                 System.out.println(raiz.valor);
             }
     }
+    
+    public void percorrerEmOrdem(No raiz){
+        if(raiz != null){
+            percorrerEmOrdem(raiz.esquerdo);
+            System.out.println(raiz.valor + ' ');
+            percorrerEmOrdem(raiz.direito);
+        } else {
+            System.out.println(raiz.valor);
+        }
+    
+    }
 }
