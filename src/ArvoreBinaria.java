@@ -9,4 +9,13 @@ public class ArvoreBinaria {
         }
     }
 
+    public void percorrerPreOrdem(No raiz){
+        if (raiz != null){
+            System.out.println(raiz.valor + ' ');
+            percorrerPreOrdem(raiz.esquerdo); 
+            percorrerPreOrdem(raiz.direito);
+            } else {
+                System.out.println(raiz.valor);
+            }
+    }
 }
