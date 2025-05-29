@@ -16,8 +16,6 @@ public class ArvoreBinaria {
             System.out.println(raiz.valor + ' ');
             percorrerPreOrdem(raiz.esquerdo); 
             percorrerPreOrdem(raiz.direito);
-            } else {
-                System.out.println(raiz.valor);
             }
     }
     
@@ -26,8 +24,6 @@ public class ArvoreBinaria {
             percorrerEmOrdem(raiz.esquerdo);
             System.out.println(raiz.valor + ' ');
             percorrerEmOrdem(raiz.direito);
-        } else {
-            System.out.println(raiz.valor);
         }
     
     }
@@ -37,8 +33,6 @@ public class ArvoreBinaria {
             percorrerPosOrdem(raiz.esquerdo);
             percorrerPosOrdem(raiz.direito);
             System.out.println(raiz.valor + ' ');
-        } else {
-            System.out.println(raiz.valor);
         }
     }
 
