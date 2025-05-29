@@ -29,4 +29,14 @@ public class ArvoreBinaria {
         }
     
     }
+
+    public void percorrerPosOrdem(No raiz){
+        if (raiz!= null){
+            percorrerPosOrdem(raiz.esquerdo);
+            percorrerPosOrdem(raiz.direito);
+            System.out.println(raiz.valor + ' ');
+        } else {
+            System.out.println(raiz.valor);
+        }
+    }
 }
